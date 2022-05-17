@@ -1,0 +1,21 @@
+<testsuite failures="1" name="src/test/java/com/telstra/codechallenge/repositories/GitRespositoryController.feature" skipped="0" tests="2" time="2.047166">
+  <testcase classname="src.test.java.com.telstra.codechallenge.repositories.GitRespositoryController" name="GET API GIVE ME STATUS 200 IN REPOSITORIES" time="2.032348">
+    <system-out>Given url 'http://localhost:8080/repositories?repositoriesNumber=1' ....... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.com.telstra.codechallenge.repositories.GitRespositoryController" name="GET API GIVE ME BADREQUEST" time="0.014818">
+    <failure message="GitRespositoryController.feature:10 - &#10;org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: http:http://localhost:8080/repositories">Given url 'http://localhost:8080/repositories?repositoriesNumber=1' ....... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Given url 'http:http://localhost:8080/repositories' ....................... passed
+When method GET ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: GitRespositoryController.feature:10 - 
+org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: http:http://localhost:8080/repositories
+	at ✽.When method GET (GitRespositoryController.feature:10)
+
+Then status 400 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>

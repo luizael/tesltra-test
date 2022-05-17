@@ -1,0 +1,25 @@
+15:01:59.209 request:
+1 > GET http://localhost:8080/repositories?repositoriesNumber=1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+
+15:02:00.380 response time in milliseconds: 1149.73
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 16 May 2022 05:02:00 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[{"html_url":"https://github.com/YohoYang/VSGUI","watchers_count":"25","language":"C#","description":"一款全新VapourSynth视频压制软件。A video encode GUI like MeGUI for VapourSynth.","name":"VSGUI"}]
+
+15:02:00.440 org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: http:http://localhost:8080/repositories, http call failed after 0 milliseconds for URL: http:http://localhost:8080/repositories
+15:02:00.440 http request failed: 
+org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: http:http://localhost:8080/repositories
